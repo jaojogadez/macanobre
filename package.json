@@ -1,0 +1,27 @@
+{
+  "name": "macanobre-rastreabilidade",
+  "version": "1.0.0",
+  "description": "Site institucional interativo sobre rastreabilidade agrícola - Maçã Gala",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "server": "http-server",
+    "dev": "http-server -c-1"
+  },
+  "keywords": [
+    "rastreabilidade",
+    "agrícola",
+    "maçã",
+    "transparência",
+    "segurança alimentar"
+  ],
+  "author": "Maça Nobre",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jaojogadez/macanobre"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}

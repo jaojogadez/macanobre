@@ -1,0 +1,18 @@
+<!-- Placeholder para logo.png -->
+<!-- Este é um arquivo SVG que será convertido em PNG -->
+<!-- Você pode substituir este arquivo com uma imagem real -->
+<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+    <!-- Fundo -->
+    <rect width="200" height="200" fill="#2d5016" rx="10"/>
+    
+    <!-- Maçã estilizada -->
+    <circle cx="100" cy="90" r="50" fill="#c94545"/>
+    
+    <!-- Folha -->
+    <ellipse cx="125" cy="55" rx="18" ry="25" fill="#4a7c2c" transform="rotate(45 125 55)"/>
+    
+    <!-- Texto -->
+    <text x="100" y="160" font-size="24" font-weight="bold" text-anchor="middle" fill="#ffffff" font-family="Arial">
+        MAÇA NOBRE
+    </text>
+</svg>

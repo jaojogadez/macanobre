@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maça Nobre - Rastreabilidade Agrícola</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navegação -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <img src="logo.png" alt="Maça Nobre Logo" class="logo">
+                Maça Nobre
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#quem-somos">Quem Somos</a></li>
+                <li><a href="#rastreabilidade">Rastreabilidade</a></li>
+                <li><a href="#consulta">Consulta por Lote</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Da Árvore ao Supermercado</h1>
+            <h2>A Jornada Rastreável da Maçã Gala</h2>
+            <p>Conheça todo o caminho percorrido pela maçã Maça Nobre, com total transparência, segurança e controle de
+                qualidade.</p>
+            <a href="#rastreabilidade" class="btn btn-primary">
+                <i class="fas fa-route"></i> Acompanhar Rastreabilidade
+            </a>
+        </div>
+    </section>
+
+    <!-- Seção Quem Somos -->
+    <section id="quem-somos" class="about">
+        <div class="container">
+            <h2>Sobre a Maça Nobre</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>A Maça Nobre atua na produção e distribuição de maçãs de alta qualidade, conectando o campo ao
+                        varejo com eficiência e responsabilidade. Trabalhamos com boas práticas agrícolas, controle
+                        rigoroso de qualidade e logística adequada, garantindo frutas frescas, seguras e rastreáveis.
+                    </p>
+                    <p>Nosso compromisso é oferecer confiança, sabor e excelência em cada maçã.</p>
+                </div>
+                <div class="about-features">
+                    <div class="feature-item">
+                        <i class="fas fa-leaf"></i>
+                        <h3>Sustentabilidade</h3>
+                        <p>Boas práticas agrícolas e manejo responsável da terra</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Segurança</h3>
+                        <p>Controle rigoroso de qualidade em todas as etapas</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-eye"></i>
+                        <h3>Transparência</h3>
+                        <p>Total rastreabilidade do campo ao seu prato</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Produto Rastreado -->
+    <section class="product-section">
+        <div class="container">
+            <h2>Produto Rastreado</h2>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="embalagem.jpg" alt="Embalagem Maçã Gala" class="packaging-image">
+                </div>
+                <div class="product-info">
+                    <div class="info-row">
+                        <span class="label">Produto:</span>
+                        <span class="value">Maçã</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="label">Variedade:</span>
+                        <span class="value">Gala</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="label">Lote:</span>
+                        <span class="value highlight">MN-GALA-180226</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="label">Data da Colheita:</span>
+                        <span class="value">18/02/2026</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="label">Quantidade Produzida:</span>
+                        <span class="value">12.000 kg</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Linha do Tempo -->
+    <section id="rastreabilidade" class="timeline-section">
+        <div class="container">
+            <h2>Jornada Completa da Maçã</h2>
+            <p class="timeline-intro">Acompanhe cada etapa do processo de rastreabilidade</p>
+
+            <div class="timeline">
+                <!-- Etapa 1: Produção -->
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Produção</h3>
+                            <button class="toggle-btn" onclick="toggleStage(this)">
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
+                        <div class="stage-details">
+                            <div class="detail-group">
+                                <h4><i class="fas fa-info-circle"></i> Informações Técnicas</h4>
+                                <div class="detail-item">
+                                    <span class="detail-label">Tipo de Cultivo:</span>
+                                    <span>Convencional</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="detail-label">Fertilizante:</span>
+                                    <span>NPK 10-10-10 (aplicação controlada)</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="detail-label">Irrigação:</span>
+                                    <span>Gotejamento</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="detail-label">Clima:</span>
+                                    <span>18 °C a 26 °C, baixo índice de chuvas</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="detail-label">Controle de Pragas:</span>
+                                    <span>MIP com defensivos autorizados pelo MAPA</span>
+                                </div>
+                            </div>
+                            <div class="detail-group">
+                                <h4><i class="fas fa-tasks"></i> Operações Realizadas</h4>
+                                <ul class="operations-list">
+                                    <li>Poda estratégica</li>
+                                    <li>Raleio manual</li>
+                                    <li>Adubação controlada</li>
+                                    <li>Monitoramento fitossanitário</li>
+                                    <li>Colheita manual seletiva</li>
+                                </ul>
+                            </div>
+                            <div class="detail-group">
+                                <h4><i class="fas fa-user"></i> Responsável</h4>
+                                <div class="responsible">
+                                    <strong>João Henrique Almeida</strong>
+                                    <p>Produtor Rural e Responsável Técnico</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Etapa 2: Transporte -->
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Transporte e Logística</h3>
+                            <button class="toggle-btn" onclick="toggleStage(this)">
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
+                        <div class="stage-details">
+                            <div class="detail-group">
+                                <h4><i class="fas fa-calendar"></i> Cronograma</h4>
+                                <div class="detail-item">
+                                    <span class="detail-label">Data de Envio:</span>
+                                    <span>20/02/2026</span>
+                                </div>
+                            </div>
+                            <div class="detail-group">
+                                <h4><i class="fas fa-shipping-fast"></i> Transportadora</h4>
+                                <div class="detail-item">
+                                    <span class="detail-label">Empresa:</span>
+                                    <span>SerraSul Logística Agrícola LTDA</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="detail-label">CNPJ:</span>
+                                    <span>39.617.482/0001-09</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="detail-label">Veículo:</span>
+                                    <span>Caminhão baú refrigerado</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="detail-label">Placa:</span>
+                                    <span>ABC-4E29</span>
+                                </div>
+                            </div>
+                            <div class="detail-group">
+                                <h4><i class="fas fa-map"></i> Rota</h4>
+                                <div class="detail-item">
+                                    <span class="detail-label">Origem:</span>
+                                    <span>Vacaria – RS</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="detail-label">Destino:</span>
+                                    <span>São Paulo – SP</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="detail-label">Via:</span>
+                                    <span>BR-116</span>
+                                </div>
+                            </div>
+                            <div class="detail-group">
+                                <h4><i class="fas fa-thermometer-half"></i> Condições</h4>
+                                <div class="detail-item">
+                                    <span class="detail-label">Temperatura Mantida:</span>
+                                    <span>2 °C a 4 °C</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Etapa 3: Recebimento no Varejo -->
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <i class="fas fa-store"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Recebimento no Varejo</h3>
+                            <button class="toggle-btn" onclick="toggleStage(this)">
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
+                        <div class="stage-details">
+                            <div class="detail-group">
+                                <h4><i class="fas fa-building"></i> Supermercado</h4>
+                                <div class="detail-item">
+                                    <span class="detail-label">Empresa:</span>
+                                    <span>Supermercados Bom Pomar LTDA</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="detail-label">CNPJ:</span>
+                                    <span>41.903.775/0001-68</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="detail-label">Endereço:</span>
+                                    <span>Avenida Paulista, 1578 – São Paulo, SP</span>
+                                </div>
+                            </div>
+                            <div class="detail-group">
+                                <h4><i class="fas fa-calendar-check"></i> Recebimento</h4>
+                                <div class="detail-item">
+                                    <span class="detail-label">Data:</span>
+                                    <span>22/02/2026</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="detail-label">Lote Recebido:</span>
+                                    <span class="highlight">MN-GALA-180226</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="detail-label">Status:</span>
+                                    <span class="status-badge status-received">Recebido e Disponível</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Rastreabilidade -->
+    <section class="traceability-section">
+        <div class="container">
+            <h2>Identificação e Rastreabilidade</h2>
+            <div class="traceability-content">
+                <div class="traceability-text">
+                    <p>As embalagens de maçãs Maça Nobre possuem etiquetas especiais com informações completas que
+                        garantem total rastreabilidade:</p>
+                    <ul class="traceability-features">
+                        <li><i class="fas fa-check-circle"></i> <strong>Variedade da Maçã</strong> - Identificação clara
+                            do tipo</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>Número do Lote</strong> - Código único para
+                            rastreamento</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>Data de Colheita</strong> - Garantia de frescor
+                        </li>
+                        <li><i class="fas fa-check-circle"></i> <strong>Origem</strong> - Informação de procedência</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>Código QR</strong> - Acesso rápido aos dados
+                            completos</li>
+                    </ul>
+                    <p class="highlight-text">Isso garante segurança alimentar, transparência total e confiança no
+                        produto que você leva para casa.</p>
+                </div>
+                <div class="traceability-visual">
+                    <div class="label-mockup">
+                        <div class="label-header">
+                            <div class="product-image">
+                                <img src="embalagem.jpg" alt="Embalagem Maçã Gala" class="packaging-image">
+                            </div>
+                        </div>
+                        <div class="label-info">
+                            <p class="label-title">Maçã Gala</p>
+                            <p><strong>Lote:</strong> MN-GALA-180226</p>
+                            <p><strong>Colheita:</strong> 18/02/2026</p>
+                            <p><strong>Origem:</strong> Vacaria – RS</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Consulta de Rastreabilidade -->
+    <section id="consulta" class="query-section">
+        <div class="container">
+            <h2>Consultar Rastreabilidade por Lote</h2>
+            <p class="query-intro">Digite o código do lote para acessar todos os detalhes da rastreabilidade</p>
+
+            <div class="query-container">
+                <div class="search-box">
+                    <input type="text" id="batchInput" class="batch-input" placeholder="Ex: MN-GALA-180226"
+                        onkeypress="handleEnter(event)">
+                    <button class="btn btn-search" onclick="searchBatch()">
+                        <i class="fas fa-search"></i> Pesquisar
+                    </button>
+                </div>
+
+                <div id="queryResult" class="query-result" style="display: none;">
+                    <div class="result-header">
+                        <h3>Resultado da Consulta</h3>
+                        <button class="close-result" onclick="closeQueryResult()">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                    <div class="result-content">
+                        <div class="result-section">
+                            <h4><i class="fas fa-seedling"></i> Produção</h4>
+                            <div class="result-item">
+                                <span class="result-label">Produtor:</span>
+                                <span>João Henrique Almeida</span>
+                            </div>
+                            <div class="result-item">
+                                <span class="result-label">Localização:</span>
+                                <span>Vacaria – RS</span>
+                            </div>
+                            <div class="result-item">
+                                <span class="result-label">Colheita:</span>
+                                <span>18/02/2026</span>
+                            </div>
+                            <div class="result-item">
+                                <span class="result-label">Quantidade:</span>
+                                <span>12.000 kg</span>
+                            </div>
+                        </div>
+
+                        <div class="result-section">
+                            <h4><i class="fas fa-truck"></i> Transporte</h4>
+                            <div class="result-item">
+                                <span class="result-label">Transportadora:</span>
+                                <span>SerraSul Logística Agrícola LTDA</span>
+                            </div>
+                            <div class="result-item">
+                                <span class="result-label">Data de Envio:</span>
+                                <span>20/02/2026</span>
+                            </div>
+                            <div class="result-item">
+                                <span class="result-label">Rota:</span>
+                                <span>Vacaria – RS → São Paulo – SP (BR-116)</span>
+                            </div>
+                            <div class="result-item">
+                                <span class="result-label">Temperatura:</span>
+                                <span>2 °C a 4 °C</span>
+                            </div>
+                        </div>
+
+                        <div class="result-section">
+                            <h4><i class="fas fa-store"></i> Varejo</h4>
+                            <div class="result-item">
+                                <span class="result-label">Supermercado:</span>
+                                <span>Supermercados Bom Pomar LTDA</span>
+                            </div>
+                            <div class="result-item">
+                                <span class="result-label">Endereço:</span>
+                                <span>Avenida Paulista, 1578 – São Paulo, SP</span>
+                            </div>
+                            <div class="result-item">
+                                <span class="result-label">Data de Recebimento:</span>
+                                <span>22/02/2026</span>
+                            </div>
+                            <div class="result-item">
+                                <span class="result-label">Status:</span>
+                                <span class="status-badge status-received">Rastreável e Verificado</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="query-hint">
+                    <p><strong>Dica:</strong> Use o número do lote encontrado na embalagem da maçã:
+                        <code>MN-GALA-180226</code></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Maça Nobre</h4>
+                    <p>Qualidade, segurança e transparência em cada maçã.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="#inicio">Início</a></li>
+                        <li><a href="#quem-somos">Quem Somos</a></li>
+                        <li><a href="#rastreabilidade">Rastreabilidade</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <p>
+                        <i class="fas fa-phone"></i> (54) 3232-0000<br>
+                        <i class="fas fa-envelope"></i> info@macanobre.com.br<br>
+                        <i class="fas fa-map-marker-alt"></i> Vacaria – RS
+                    </p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Maça Nobre. Todos os direitos reservados. | Rastreabilidade Agrícola</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

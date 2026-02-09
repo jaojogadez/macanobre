@@ -1,0 +1,11 @@
+node_modules/
+.DS_Store
+*.log
+.vscode/settings.json
+dist/
+build/
+*.swp
+*.swo
+.env
+.env.local
+*.zip
